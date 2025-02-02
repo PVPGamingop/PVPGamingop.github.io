@@ -1,0 +1,422 @@
+body {
+    background-color: #000000;
+    font-family: segoe UI, sans-serif;
+    color: #fcfcfc;
+    /* border: 2px solid rgb(237, 14, 14); */
+    display: flow-root;
+}
+
+#PVPGaming {
+    color: rgb(2252 114 0);
+    text-align: center;
+    font-family: Minecraft, segoe UI, sans-serif;
+    font-weight: bolder;
+    text-shadow: 0px 0px 15px yellow;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    text-align: center;
+    font-family: Minecraft, segoe UI, sans-serif;
+    display: flex;
+    color: #2dcd2dd6;
+    text-shadow: 0px 0px 11px #0ede50;
+    margin-top: 10px;
+}
+
+
+.Logo {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+@keyframes Logoanimation {
+    from {}
+
+    to {
+        transform: translatex(3px);
+        box-shadow: 0px 0px 20px hsla(139, 84%, 25%, 0.508);
+    }
+
+}
+
+
+.sticky {
+    /* background-color: #000000; */
+    position: sticky;
+    top: 0px
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    float: right;
+    position: sticky;
+    z-index: 1;
+}
+
+* {
+    margin: 0;
+    padding: o;
+}
+
+.hello {
+    animation: Logoanimation 1ms ease-in-out 0s infinite alternate-reverse;
+    box-shadow: #0ede50;
+    z-index: 100;
+    position: relative;
+}
+
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.image-wrapper img {
+    display: block;
+    width: auto;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #0cddc1d0;
+    font-weight: bolder;
+    font-family: "Baloo Bhai 2", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.image-wrapper:hover .image-overlay {
+    opacity: 1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap');
+
+.lorem {
+    font-family: "Baloo Bhai 2", serif;
+    color: #08f3fb;
+    filter: drop-shadow(0px 0px 5px #08f3fb);
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    /* padding-top: 103px; */
+}
+
+
+
+.hover-image-wrapper {
+    position: relative;
+    display: flexbox;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    float: left;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 6px 3px 9px 3px rgb(230 230 230)
+}
+
+.hover-image-wrapper img {
+    display: flex;
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    /* background-position: center center; */
+    width: 23vw;
+    height: auto;
+}
+
+.hover-image-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+.hover-image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    /* Transparent effect */
+    color: black;
+    /* Black text for contrast */
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.hover-image-wrapper:hover .hover-image-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.images {
+    clear: both;
+    height: auto;
+    /* border: 5px solid #03f603; */
+    width: auto;
+    overflow: auto;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+    border-radius: 10px;
+
+}
+
+.images22 {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 13px;
+    /* padding: 16px 24px 24px; */
+    margin-bottom: 25px;
+    /* padding: 12px 86px 24px; */
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-gap: 8px;
+    /* grid-template-columns: repeat(2, auto); */
+
+}
+
+.main {
+    background-image: url(background.png);
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+}
+
+.bix {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.74;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+.material {
+    position: relative;
+    z-index: 10;
+
+}
+
+/* iframe {
+    width: 40vw;
+    height: 50vh;
+} */
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    align-items: center;
+
+
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg iframe {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 345px;
+    height: 192px;
+    padding-top: 17px;
+    padding-right: 105px;
+    z-index: 11;
+}
+
+@media screen and (max-width: 1450px) {
+    .first {
+        flex-wrap: wrap;
+    }
+
+}
+
+#PVPGaming::before {
+    content: "";
+    z-index: -1;
+    background-color: #eaeaea00;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* left: 0; */
+    border: none;
+    /* top: 0; */
+    border-radius: 10px;
+
+
+}
+
+#PVPGaming::before {
+    contain: "";
+    background: linear-gradient(45deg, #00eeff, #44d6ae, #388217, #cc3232, #15da67);
+    /* justify-content: center; */
+    /* display: flex; */
+    /* left: 0; */
+    position: absolute;
+    /* top: -2px;
+    left: -2px; */
+    background-size: 800%;
+    z-index: -1;
+    width: 255px;
+    height: 6vh;
+    filter: blur(15px);
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+    animation: glowing 20s linear infinite;
+
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+
+}
+
+#PVPGaming::after {
+    content: "";
+    z-index: -1;
+    background-color: #000000;
+    width: 255px;
+    height: 6vh;
+    position: absolute;
+    /* left: 0; */
+    /* border: none; */
+
+    border-radius: 10px;
+
+}
+
+#PVPGaming:hover::before {
+    opacity: 1;
+
+}
+
+#PVPGaming:active::after {
+    background: transparent;
+}
+
+#PVPGaming:active {
+    font-weight: bold;
+    color: black;
+}
+
+.boundary {
+    animation: glow-border 2s infinite alternate;
+    width: auto;
+   
+    border: 4px solid transparent;
+  
+    border-radius: 20px;
+    background-image: linear-gradient (#911b1b, #f04a4a),
+        linear-gradient(to right, cyan, lime);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    position: relative;
+
+}
+
+
+
+@keyframes glow-border {
+    0% {
+        border-image: linear-gradient(to right, #00eeff, #44d6ae, #388217, #cc3232, #15da67) 2;
+    }
+
+    50% {
+        border-image: linear-gradient(to right, #ff2200, #d644d1, #178266, #ccb032, #9cda15) 2;
+    }
+
+    100% {
+        border-image: linear-gradient(to right, #00eeff, #44d6ae, #388217, #cc3232, #15da67) 2;
+    }
+}
+
+.download-btn {
+    position: absolute;
+    top: 5px; 
+    right: 5px; 
+    display: none; 
+    z-index: 10;
+    transition: opacity 0.3s ease-in-out;
+    
+}
+
+.hover-image-wrapper:hover .download-btn {
+    display: block;
+}
+.download-icon {
+    width: 20px; 
+    height: 20px;
+    opacity: 0.8; 
+    transition: opacity 0.3s ease-in-out;
+    max-width:39px;
+    padding-bottom:200px;
+}
+
+.download-icon:hover {
+    opacity: 1;
+}
+.hover-image-wrapper {
+    position: relative; 
+}
