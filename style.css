@@ -384,17 +384,18 @@ h3 {
 
 
 
+
 @keyframes glow-border {
     0% {
-        border-image: linear-gradient(to right, #00eeff, #44d6ae, #388217, #cc3232, #15da67) 2;
+        border-image: linear-gradient(to right, #ff0000, #12ff00, #ffd601, #f19a01, #ffd601) 2;
     }
 
     50% {
-        border-image: linear-gradient(to right, #ff2200, #d644d1, #178266, #ccb032, #9cda15) 2;
+        border-image: linear-gradient(to right, #ffd601, #f19a01, #ffd601, #12ff00, #ff0000) 2;
     }
 
     100% {
-        border-image: linear-gradient(to right, #00eeff, #44d6ae, #388217, #cc3232, #15da67) 2;
+        border-image: linear-gradient(to right, #c615da, #167ac6, #12ff00, #1d913a, #c615da) 2;
     }
 }
 
