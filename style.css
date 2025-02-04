@@ -35,7 +35,7 @@ h3 {
 
 }
 
-@keyframes Logoanimation {
+/* @keyframes Logoanimation {
     from {}
 
     to {
@@ -43,7 +43,7 @@ h3 {
         box-shadow: 0px 0px 20px hsla(139, 84%, 25%, 0.508);
     }
 
-}
+} */
 
 
 .sticky {
@@ -67,12 +67,12 @@ h3 {
     padding: o;
 }
 
-.hello {
+/* .hello {
     animation: Logoanimation 1ms ease-in-out 0s infinite alternate-reverse;
     box-shadow: #0ede50;
     z-index: 100;
     position: relative;
-}
+} */
 
 
 .image-wrapper {
@@ -384,18 +384,17 @@ h3 {
 
 
 
-
 @keyframes glow-border {
     0% {
-        border-image: linear-gradient(to right, #ff0000, #12ff00, #ffd601, #f19a01, #ffd601) 2;
+        border-image: linear-gradient(to right, #00eeff, #44d6ae, #388217, #cc3232, #15da67) 2;
     }
 
     50% {
-        border-image: linear-gradient(to right, #ffd601, #f19a01, #ffd601, #12ff00, #ff0000) 2;
+        border-image: linear-gradient(to right, #ff2200, #d644d1, #178266, #ccb032, #9cda15) 2;
     }
 
     100% {
-        border-image: linear-gradient(to right, #c615da, #167ac6, #12ff00, #1d913a, #c615da) 2;
+        border-image: linear-gradient(to right, #00eeff, #44d6ae, #388217, #cc3232, #15da67) 2;
     }
 }
 
@@ -428,3 +427,44 @@ h3 {
 .hover-image-wrapper {
     position: relative; 
 }
+.search-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#imageSearch {
+    padding: 12px;
+    border-radius: 100px;
+    /* border: 2px solid #19dad3;*/
+        box-shadow: 0px 0px 15px rgb(20 230 234 / 51%);
+        font-size: 18px;
+    width: 220px;
+    background-color: #1a1a1a;
+    color: white;
+    outline: none;
+        backdrop-filter: blur(10px);
+
+    text-align: center;
+    font-family: Minecraft, sans-serif;
+    text-transform: uppercase;
+        transition: width 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+
+}
+
+#imageSearch::placeholder {
+    color: #19dad3;
+    
+}
+#imageSearch:focus {
+    width: 300px;
+    box-shadow: 0px 0px 25px lime;
+    border-color: lime;
+}
+#imageSearch:focus::placeholder {
+        color: lime !important;
+
+}
+
+
+

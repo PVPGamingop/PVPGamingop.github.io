@@ -15,3 +15,20 @@ document.addEventListener("DOMContentLoaded", function () {
         wrapper.appendChild(downloadBtn);
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("imageSearch");
+    const imageWrappers = document.querySelectorAll(".hover-image-wrapper");
+
+    searchInput.addEventListener("input", function () {
+        const searchText = searchInput.value.toLowerCase();
+
+        imageWrappers.forEach(wrapper => {
+            const overlayText = wrapper.querySelector(".hover-image-overlay").textContent.toLowerCase();
+            if (overlayText.includes(searchText)) {
+                wrapper.style.display = "block";
+            } else {
+                wrapper.style.display = "none";
+            }
+        });
+    });
+});
