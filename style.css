@@ -14,7 +14,10 @@ body {
     text-shadow: 0px 0px 15px yellow;
     display: flex;
     justify-content: center;
+    width: 210px;
+    margin: auto;
 }
+
 
 h3 {
     text-align: center;
@@ -189,7 +192,7 @@ h3 {
 .images {
     /* clear: both; */
     height: auto;
-    /* border: 5px solid #03f603; */
+    border-top: 5px solid lime;
     /* width:400px; */
     overflow: hidden;
     /* display: flex; */
@@ -225,9 +228,14 @@ h3 {
     background-image: url(background.png);
     height: 100vh;
     position: relative;
+    /* z-index:-10; */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: max(1200px, 100vw);
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bix {
@@ -344,7 +352,7 @@ h3 {
     z-index: -1;
     background-color: #000000;
     width: 255px;
-    height: 6vh;
+    height: 51px;
     position: absolute;
     /* left: 0; */
     /* border: none; */
@@ -428,8 +436,9 @@ h3 {
     position: relative; 
 }
 .search-container {
-    text-align: center;
+    text-align: right;
     margin-bottom: 15px;
+    padding-top: 10px;
 }
 
 #imageSearch {
@@ -444,7 +453,7 @@ h3 {
     outline: none;
         backdrop-filter: blur(10px);
 
-    text-align: center;
+    /* text-align: center; */
     font-family: Minecraft, sans-serif;
     text-transform: uppercase;
         transition: width 0.4s ease-in-out;
@@ -468,3 +477,37 @@ h3 {
 
 
 
+/* CSS */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+    position: relative;
+}
+html {
+    scroll-behavior: smooth;
+}
+#PVPGaming:hover {
+    /* background-color: #00ff00; */
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+/* Light mode (default) */
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+#darkModeToggle{
+    position: relative;
+    background: rgba(0, 0, 0, 0);
+    border: rgba(255, 255, 255, 0);
+    padding: 0px;
+}
+.imgsearch{
+    border-top:3px solid lime;
+}

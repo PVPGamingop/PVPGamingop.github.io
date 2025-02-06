@@ -32,3 +32,23 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the button and image element
+    const toggleButton = document.getElementById("darkModeToggle");
+    const toggleImage = toggleButton.querySelector("img");
+
+    // Add event listener to toggle dark mode
+    toggleButton.addEventListener("click", () => {
+        // Toggle dark mode class on body
+        document.body.classList.toggle("dark-mode");
+
+        // Check if dark mode is active and change image accordingly
+        if (document.body.classList.contains("dark-mode")) {
+            toggleImage.src = "light_mode .png"; // Dark mode enabled, show light mode icon
+        } else {
+            toggleImage.src = "night-mode1 .png"; // Dark mode disabled, show night mode icon
+        }
+
+        console.log("Dark mode toggled. Current image:", toggleImage.src);
+    });
+});
