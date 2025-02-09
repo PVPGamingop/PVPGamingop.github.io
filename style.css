@@ -25,13 +25,14 @@
 body {
     font-family: segoe UI,sans-serif;
     display: flow-root;
-    background-color: #fff;
-    color: #000;
+    background-color: #000;
+    color: #e9e3e3;
 }
 
 #PVPGaming,h3 {
     text-align: center;
-    font-family: Minecraft,segoe UI,sans-serif
+    font-family: Minecraft,segoe UI,sans-serif;
+    justify-self: center;
 }
 
 #PVPGaming {
@@ -55,7 +56,6 @@ h3 {
     text-shadow: 0 0 11px #0ede50;
     margin-top: 19px;
     position: relative;
-    justify-content: center;
 }
 
 .sticky {
@@ -159,8 +159,8 @@ h3 {
 }
 
 .dark-mode,body.dark-mode {
-    background-color: #121212;
-    color: #fff
+    background-color: #ffffff;
+    color: #000000
 }
 
 #PVPGaming::before,.download-btn,.download-icon {
@@ -205,7 +205,6 @@ h3 {
     overflow: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    overflow-x: hidden;
 }
 
 .material {
