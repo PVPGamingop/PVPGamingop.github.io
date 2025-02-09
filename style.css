@@ -1,1 +1,382 @@
-.links,.sticky{position:sticky}.image-overlay,.lorem{font-family:"Baloo Bhai 2",serif}.hover-image-wrapper,.image-wrapper{border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,.5);overflow:hidden}#PVPGaming::after,#PVPGaming::before{z-index:-1;width:255px;position:absolute}#PVPGaming:hover,.hover-image-wrapper:hover img,.image-wrapper:hover img{transform:scale(1.1)}body{font-family:segoe UI,sans-serif;display:flow-root;background-color:#fff;color:#000}#PVPGaming,h3{text-align:center;font-family:Minecraft,segoe UI,sans-serif}#PVPGaming{color:rgb(2252 114 0);font-weight:bolder;text-shadow:0 0 15px #ff0;display:flex;justify-content:center;width:210px;margin:auto}.Logo,.links{display:flex;justify-content:center}h3{display:flex;color:#2dcd2dd6;text-shadow:0 0 11px #0ede50;margin-top:10px}.sticky{top:0}.links{flex-direction:column;align-items:flex-end;float:right;z-index:1}*{margin:0;padding:o}.image-wrapper{position:relative;display:inline-block}.hover-image-overlay,.image-overlay{position:absolute;width:100%;text-align:center;left:0;opacity:0}.image-wrapper img{display:block;width:auto;height:150px;object-fit:cover;transition:transform .5s}.image-overlay{top:0;height:100%;background:rgba(0,0,0,.6);color:#0cddc1d0;font-weight:bolder;display:flex;justify-content:center;align-items:center;transition:opacity .5s;font-size:1.5rem;padding:10px}#PVPGaming:hover::before,.download-icon:hover,.image-wrapper:hover .image-overlay,[aos].aos-animate{opacity:1}.lorem{color:#08f3fb;filter:drop-shadow(0px 0px 5px #08f3fb);font-size:larger;display:flex;flex-direction:column;text-align:center;padding:30px}#PVPGaming:active,.hover-image-overlay{font-weight:700;color:#000}.hover-image-wrapper{display:flexbox;margin:10px;float:left;justify-items:center;align-items:center;box-shadow:6px 3px 9px 3px rgb(230 230 230)}.hover-image-wrapper img{display:flex;object-fit:cover;transition:transform .5s;width:248px;height:auto}.hover-image-overlay{bottom:0;background:rgba(255,255,255,.6);padding:10px 0;transform:translateY(100%);transition:.5s;font-size:1rem}.boundary,.hover-image-wrapper,.main,.material,.secImg,.secImg img{position:relative}.dark-mode,body.dark-mode{background-color:#121212;color:#fff}#PVPGaming::before,.download-btn,.download-icon{transition:opacity .3s ease-in-out}.hover-image-wrapper:hover .hover-image-overlay{opacity:1;transform:translateY(0)}.images{height:auto;border-top:5px solid #0f0;overflow:hidden;align-items:center;justify-content:center;flex-direction:column;margin-bottom:25px}.images22{display:grid;grid-template-columns:repeat(auto-fill,266px);grid-template-rows:266px repeat(auto-fill,266px);justify-content:center;overflow:hidden;margin-top:0;margin-bottom:0;grid-gap:8px;right:0;left:0}.main{background-image:url(Untitled\ design\ \(1\).png);height:100vh;background-position:center center;background-attachment:fixed;background-repeat:no-repeat;background-size:cover;overflow:auto}.material{z-index:10}.first{display:flex;justify-content:center;max-width:70vw;margin:auto;align-items:center}.secImg img{width:525px;z-index:10;height:340px}.secImg iframe{position:absolute;top:47px;right:0;width:328px;height:175px;padding-top:17px;padding-right:98.5px;z-index:11}@media screen and (max-width:1450px){.first{flex-wrap:wrap}}#PVPGaming::before{content:"";background-color:#eaeaea00;border:none;border-radius:10px;contain:"";background:linear-gradient(45deg,#0ef,#44d6ae,#388217,#cc3232,#15da67);background-size:800%;height:6vh;filter:blur(15px);opacity:0;animation:20s linear infinite glowing}@keyframes glowing{0%,100%{background-position:0 0}50%{background-position:400% 0}}#PVPGaming::after{content:"";background-color:#000;height:51px;border-radius:10px}#PVPGaming:active::after{background:0 0}.boundary{animation:2s infinite alternate glow-border;width:auto;border:4px solid transparent;border-radius:20px;background-image:linear-gradient (#911b1b,#f04a4a),linear-gradient(to right,#0ff,#0f0);background-origin:border-box;background-clip:padding-box,border-box}@keyframes glow-border{0%,100%{border-image:linear-gradient(to right,#00eeff,#44d6ae,#388217,#cc3232,#15da67) 2}50%{border-image:linear-gradient(to right,#ff2200,#d644d1,#178266,#ccb032,#9cda15) 2}}.download-btn{position:absolute;top:0;right:5px;display:none;z-index:10}.hover-image-wrapper:hover .download-btn{display:block}.download-icon{width:20px;height:20px;opacity:.8;max-width:39px}.search-container{text-align:right;margin-bottom:15px;padding-top:10px}#imageSearch{padding:12px;border-radius:100px;box-shadow:0 0 15px rgb(20 230 234 / 51%);font-size:18px;width:220px;background-color:#1a1a1a;color:#fff;outline:0;backdrop-filter:blur(10px);font-family:Minecraft,sans-serif;text-transform:uppercase;transition:.4s ease-in-out}#imageSearch::placeholder{color:#19dad3}#imageSearch:focus{width:300px;box-shadow:0 0 25px #0f0;border-color:#0f0}#imageSearch:focus::placeholder{color:#0f0!important}.dark-mode{position:relative}html{scroll-behavior:smooth}#PVPGaming:hover{transition:transform .3s}#darkModeToggle{position:relative;background:rgba(0,0,0,0);border:rgba(255,255,255,0);padding:0;z-index:10}.imgsearch{border-top:3px solid #0f0}[aos]{opacity:0;transition:opacity .8s ease-in-out}
+.links,.sticky {
+    position: sticky
+}
+
+.image-overlay,.lorem {
+    font-family: "Baloo Bhai 2",serif
+}
+
+.hover-image-wrapper,.image-wrapper {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.5);
+    overflow: hidden
+}
+
+#PVPGaming::after,#PVPGaming::before {
+    z-index: -1;
+    width: 255px;
+    position: absolute
+}
+
+#PVPGaming:hover,.hover-image-wrapper:hover img,.image-wrapper:hover img {
+    transform: scale(1.1)
+}
+
+body {
+    font-family: segoe UI,sans-serif;
+    display: flow-root;
+    background-color: #fff;
+    color: #000;
+}
+
+#PVPGaming,h3 {
+    text-align: center;
+    font-family: Minecraft,segoe UI,sans-serif
+}
+
+#PVPGaming {
+    color: rgb(2252 114 0);
+    font-weight: bolder;
+    text-shadow: 0 0 15px #ff0;
+    display: flex;
+    justify-content: center;
+    width: 210px;
+    margin: auto
+}
+
+.Logo,.links {
+    display: flex;
+    justify-content: center
+}
+
+h3 {
+    display: flex;
+    color: #2dcd2dd6;
+    text-shadow: 0 0 11px #0ede50;
+    margin-top: 19px;
+    position: relative;
+    justify-content: center;
+}
+
+.sticky {
+    top: 0
+}
+
+.links {
+    /* flex-direction:column; */
+    align-items: flex-end;
+    float: right;
+    z-index: 1;
+}
+
+* {
+    margin: 0;
+    padding: o
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block
+}
+
+.hover-image-overlay,.image-overlay {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    opacity: 0
+}
+
+.image-wrapper img {
+    display: block;
+    width: auto;
+    height: 150px;
+    object-fit: cover;
+    transition: transform .5s
+}
+
+.image-overlay {
+    top: 0;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    color: #0cddc1d0;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .5s;
+    font-size: 1.5rem;
+    padding: 10px
+}
+
+#PVPGaming:hover::before,.download-icon:hover,.image-wrapper:hover .image-overlay,[aos].aos-animate {
+    opacity: 1
+}
+
+.lorem {
+    color: #08f3fb;
+    filter: drop-shadow(0px 0px 5px #08f3fb);
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px
+}
+
+#PVPGaming:active,.hover-image-overlay {
+    font-weight: 700;
+    color: #000
+}
+
+.hover-image-wrapper {
+    display: flexbox;
+    margin: 10px;
+    float: left;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 6px 3px 9px 3px rgb(230 230 230)
+}
+
+.hover-image-wrapper img {
+    display: flex;
+    object-fit: cover;
+    transition: transform .5s;
+    width: 248px;
+    height: auto
+}
+
+.hover-image-overlay {
+    bottom: 0;
+    background: rgba(255,255,255,.6);
+    padding: 10px 0;
+    transform: translateY(100%);
+    transition: .5s;
+    font-size: 1rem
+}
+
+.boundary,.hover-image-wrapper,.main,.material,.secImg,.secImg img {
+    position: relative
+}
+
+.dark-mode,body.dark-mode {
+    background-color: #121212;
+    color: #fff
+}
+
+#PVPGaming::before,.download-btn,.download-icon {
+    transition: opacity .3s ease-in-out
+}
+
+.hover-image-wrapper:hover .hover-image-overlay {
+    opacity: 1;
+    transform: translateY(0)
+}
+
+.images {
+    height: auto;
+    border-top: 5px solid #0f0;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 25px
+}
+
+.images22 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,266px);
+    grid-template-rows: 266px repeat(auto-fill,266px);
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-gap: 8px;
+    right: 0;
+    left: 0
+}
+
+.main {
+    background-image: url(Untitled\ design\ \(1\).png);
+    height: 100vh;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overflow-x: hidden;
+}
+
+.material {
+    z-index: 10
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    align-items: center
+}
+
+.secImg img {
+    width: 525px;
+    z-index: 10;
+    height: 340px
+}
+
+.secImg iframe {
+    position: absolute;
+    top: 47px;
+    right: 0;
+    width: 328px;
+    height: 175px;
+    padding-top: 17px;
+    padding-right: 98.5px;
+    z-index: 11
+}
+
+@media screen and (max-width: 1450px) {
+    .first {
+        flex-wrap:wrap
+    }
+}
+
+#PVPGaming::before {
+    content: "";
+    background-color: #eaeaea00;
+    border: none;
+    border-radius: 10px;
+    contain: "";
+    background: linear-gradient(45deg,#0ef,#44d6ae,#388217,#cc3232,#15da67);
+    background-size: 800%;
+    height: 6vh;
+    filter: blur(15px);
+    opacity: 0;
+    animation: 20s linear infinite glowing
+}
+
+@keyframes glowing {
+    0%,100% {
+        background-position: 0 0
+    }
+
+    50% {
+        background-position: 400% 0
+    }
+}
+
+#PVPGaming::after {
+    content: "";
+    background-color: #000;
+    height: 51px;
+    border-radius: 10px
+}
+
+#PVPGaming:active::after {
+    background: 0 0
+}
+
+.boundary {
+    animation: 2s infinite alternate glow-border;
+    width: auto;
+    border: 4px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient (#911b1b,#f04a4a),linear-gradient(to right,#0ff,#0f0);
+    background-origin: border-box;
+    background-clip: padding-box,border-box
+}
+
+@keyframes glow-border {
+    0%,100% {
+        border-image: linear-gradient(to right,#00eeff,#44d6ae,#388217,#cc3232,#15da67) 2
+    }
+
+    50% {
+        border-image: linear-gradient(to right,#ff2200,#d644d1,#178266,#ccb032,#9cda15) 2
+    }
+}
+
+.download-btn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    display: none;
+    z-index: 10
+}
+
+.hover-image-wrapper:hover .download-btn {
+    display: block
+}
+
+.download-icon {
+    width: 20px;
+    height: 20px;
+    opacity: .8;
+    max-width: 39px
+}
+
+.search-container {
+    text-align: right;
+    margin-bottom: 15px;
+    padding-top: 10px
+}
+
+#imageSearch {
+    padding: 12px;
+    border-radius: 100px;
+    box-shadow: 0 0 15px rgb(20 230 234 / 51%);
+    font-size: 18px;
+    width: 220px;
+    background-color: #1a1a1a;
+    color: #fff;
+    outline: 0;
+    backdrop-filter: blur(10px);
+    font-family: Minecraft,sans-serif;
+    text-transform: uppercase;
+    transition: .4s ease-in-out
+}
+
+#imageSearch::placeholder {
+    color: #19dad3
+}
+
+#imageSearch:focus {
+    width: 300px;
+    box-shadow: 0 0 25px #0f0;
+    border-color: #0f0
+}
+
+#imageSearch:focus::placeholder {
+    color: #0f0!important
+}
+
+.dark-mode {
+    position: relative
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+#PVPGaming:hover {
+    transition: transform .3s
+}
+
+#darkModeToggle {
+    position: relative;
+    background: rgba(0,0,0,0);
+    border: rgba(255,255,255,0);
+    padding: 0;
+    z-index: 10
+}
+
+.imgsearch {
+    border-top: 3px solid #0f0
+}
+
+[aos] {
+    opacity: 0;
+    transition: opacity .8s ease-in-out
+}
