@@ -1,0 +1,37 @@
+name: Convert Images to WebP
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+    paths:
+      - 'images/**'  # Only trigger if images are changed
+
+jobs:
+  convert-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pillow
+
+      - name: Convert images to WebP
+        run: |
+          python convert_to_webp.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "Automatically converted images to WebP"
+          git push
