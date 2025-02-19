@@ -42,12 +42,18 @@ body {
     display: flex;
     justify-content: center;
     width: 210px;
-    margin: auto
+    margin: auto;
+    height: 6.5vh;
 }
 
 .Logo,.links {
+    /* flex-wrap: wrap; */
     display: flex;
-    justify-content: center
+    justify-content: center;
+    /* box-shadow: 0 0 5px rgb(255 0 0 / 96%), 0 0 10px rgb(255 0 0); */
+    /* border-radius: 50%; */
+    /* position: relative; */
+    /* opacity: 0; */
 }
 
 h3 {
@@ -71,7 +77,10 @@ h3 {
 
 * {
     margin: 0;
-    padding: o
+    padding: o;
+    /* box-sizing: border-box; */
+    /* justify-content: center; */
+    /* justify-content: end; */
 }
 
 .image-wrapper {
@@ -273,10 +282,11 @@ h3 {
     background-color: #000;
     height: 51px;
     border-radius: 10px;
-    /* height: 5.5vh; */
+    height: 7.2vh;
     width: 234px;
-    margin: auto;
+    /* margin: auto; */
     margin-left: -6px;
+    /* margin-bottom: 49px; */
 }
 
 #PVPGaming:active::after {
@@ -385,3 +395,10 @@ html {
     opacity: 0;
     transition: opacity .8s ease-in-out
 }
+.hello {
+    box-shadow: 0 0 5px rgb(0 251 255 / 43%), 0 0 10px rgb(0 255 205 / 60%);
+    border-radius: 100px;
+    border-bottom: outset;
+    margin-bottom: 10px;
+}
+
