@@ -205,6 +205,8 @@ h3 {
     overflow: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    overflow-x: hidden;
+
 }
 
 .material {
@@ -271,6 +273,7 @@ h3 {
     background-color: #000;
     height: 51px;
     border-radius: 10px
+    height: 5.5vh;
 }
 
 #PVPGaming:active::after {
