@@ -85,7 +85,10 @@ h3 {
 
 .image-wrapper {
     position: relative;
-    display: inline-block
+    display: inline-block;
+    height: 140px;
+    width: 140px;
+    
 }
 
 .hover-image-overlay,.image-overlay {
