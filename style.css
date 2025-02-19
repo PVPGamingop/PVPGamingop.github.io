@@ -273,7 +273,10 @@ h3 {
     background-color: #000;
     height: 51px;
     border-radius: 10px;
-    height: 5.5vh;
+    /* height: 5.5vh; */
+    width: 234px;
+    margin: auto;
+    margin-left: -6px;
 }
 
 #PVPGaming:active::after {
