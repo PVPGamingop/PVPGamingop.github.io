@@ -1,38 +1,58 @@
-.links,.sticky {
+.links,
+.sticky {
     position: sticky
 }
 
-.image-overlay,.lorem {
-    font-family: "Baloo Bhai 2",serif
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Orbitron:wght@400..900&display=swap');.image-overlay,
+.lorem {
+    font-family: "Baloo Bhai 2";
+    /* font-optical-sizing: auto; */
+    /* font-style: normal; */
+    /* font-weight: bold; */
+    gap: 0px;
+}
+.image-wrapper:hover{
+       filter: drop-shadow(0px 0px 15px rgb(30 180 180 / 51%));
+    transform: scale(1.05);
 }
 
-.hover-image-wrapper,.image-wrapper {
+.hover-image-wrapper,
+.image-wrapper {
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,.5);
+    /* box-shadow: 0 4px 10px rgb(0 0 0 / 48%); */
     overflow: hidden
 }
+.hover-image-wrapper{
+     filter: drop-shadow(0px 0px 15px rgba(0, 255, 255, 1));
+    transform: scale(1.05);
+}
 
-#PVPGaming::after,#PVPGaming::before {
+#PVPGaming::after,
+#PVPGaming::before {
     z-index: -1;
     width: 255px;
     position: absolute
 }
 
-#PVPGaming:hover,.hover-image-wrapper:hover img,.image-wrapper:hover img {
+#PVPGaming:hover,
+.hover-image-wrapper:hover img,
+.image-wrapper:hover img {
     transform: scale(1.1)
 }
 
 body {
-    font-family: segoe UI,sans-serif;
+    font-family: segoe UI, sans-serif;
     display: flow-root;
     background-color: #000;
     color: #e9e3e3;
 }
 
-#PVPGaming,h3 {
+#PVPGaming,
+h3 {
     text-align: center;
-    font-family: Minecraft,segoe UI,sans-serif;
+    font-family: Minecraft, segoe UI, sans-serif;
     justify-self: center;
+    
 }
 
 #PVPGaming {
@@ -44,9 +64,11 @@ body {
     width: 210px;
     margin: auto;
     height: 6.5vh;
+    /* text-shadow: 0px 0px 10px rgba(255, 140, 0, 0.8); */
 }
 
-.Logo,.links {
+.Logo,
+.links {
     /* flex-wrap: wrap; */
     display: flex;
     justify-content: center;
@@ -62,6 +84,8 @@ h3 {
     text-shadow: 0 0 11px #0ede50;
     margin-top: 19px;
     position: relative;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
 }
 
 .sticky {
@@ -69,7 +93,7 @@ h3 {
 }
 
 .links {
-    /* flex-direction:column; */
+    flex-direction: column;
     align-items: flex-end;
     float: right;
     z-index: 1;
@@ -77,7 +101,7 @@ h3 {
 
 * {
     margin: 0;
-    padding: o;
+    padding: 0;
     /* box-sizing: border-box; */
     /* justify-content: center; */
     /* justify-content: end; */
@@ -88,10 +112,21 @@ h3 {
     display: inline-block;
     height: 140px;
     width: 140px;
-    
+    flex: 1;
+    /* Har image ko equal width milega */
+    max-width: 120px;
+    /* Adjust for smaller screen */
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    /* Square shape maintain */
+    /* box-shadow: 3px 2px 2px 4px #00000059; */
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.7));
+    transition: all 0.3s ease-in-out;
 }
 
-.hover-image-overlay,.image-overlay {
+.hover-image-overlay,
+.image-overlay {
     position: absolute;
     width: 100%;
     text-align: center;
@@ -101,16 +136,21 @@ h3 {
 
 .image-wrapper img {
     display: block;
-    width: auto;
-    height: 150px;
+    /* width: auto; */
+    /* height: 150px; */
+    /* object-fit: cover; */
+    transition: transform .5s;
+    width: 100%;
+    /* Har screen pe fit ho */
+    height: 100%;
     object-fit: cover;
-    transition: transform .5s
+    /* Image cut hone ke bajaye fit ho */
 }
 
 .image-overlay {
     top: 0;
     height: 100%;
-    background: rgba(0,0,0,.6);
+    background: rgb(0 0 0 / 45%);
     color: #0cddc1d0;
     font-weight: bolder;
     display: flex;
@@ -121,7 +161,10 @@ h3 {
     padding: 10px
 }
 
-#PVPGaming:hover::before,.download-icon:hover,.image-wrapper:hover .image-overlay,[aos].aos-animate {
+#PVPGaming:hover::before,
+.download-icon:hover,
+.image-wrapper:hover .image-overlay,
+[aos].aos-animate {
     opacity: 1
 }
 
@@ -135,7 +178,8 @@ h3 {
     padding: 30px
 }
 
-#PVPGaming:active,.hover-image-overlay {
+#PVPGaming:active,
+.hover-image-overlay {
     font-weight: 700;
     color: #000
 }
@@ -146,36 +190,46 @@ h3 {
     float: left;
     justify-items: center;
     align-items: center;
-    box-shadow: 6px 3px 9px 3px rgb(230 230 230)
+    /* box-shadow: 6px 3px 9px 3px rgb(230 230 230); */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgb(255 255 255 / 0%);
 }
 
 .hover-image-wrapper img {
-    display: flex;
-    object-fit: cover;
-    transition: transform .5s;
-    width: 248px;
-    height: auto
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure full image is visible */
+    border-radius: 10px;
+    max-height: 200px; /* Avoid too much stretching */
 }
 
 .hover-image-overlay {
     bottom: 0;
-    background: rgba(255,255,255,.6);
+    background: rgba(255, 255, 255, .6);
     padding: 10px 0;
     transform: translateY(100%);
     transition: .5s;
     font-size: 1rem
 }
 
-.boundary,.hover-image-wrapper,.main,.material,.secImg,.secImg img {
+.boundary,
+.hover-image-wrapper,
+.main,
+.material,
+.secImg,
+.secImg img {
     position: relative
 }
 
-.dark-mode,body.dark-mode {
+.dark-mode,
+body.dark-mode {
     background-color: #ffffff;
     color: #000000
 }
 
-#PVPGaming::before,.download-btn,.download-icon {
+#PVPGaming::before,
+.download-btn,
+.download-icon {
     transition: opacity .3s ease-in-out
 }
 
@@ -186,7 +240,7 @@ h3 {
 
 .images {
     height: auto;
-    border-top: 5px solid #0f0;
+    /* border-top: 5px solid #0f0; */
     overflow: hidden;
     align-items: center;
     justify-content: center;
@@ -196,15 +250,32 @@ h3 {
 
 .images22 {
     display: grid;
-    grid-template-columns: repeat(auto-fill,266px);
-    grid-template-rows: 266px repeat(auto-fill,266px);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive columns */
+    gap: 5px;
     justify-content: center;
-    overflow: hidden;
-    margin-top: 0;
-    margin-bottom: 0;
-    grid-gap: 8px;
-    right: 0;
-    left: 0
+    padding: 5px;
+}
+
+/* 📱 Mobile View: Ensure minimum 3 images */
+@media (max-width: 1024px) {
+    .images22 {
+        /* FONT-VARIANT: JIS04; */
+        grid-template-columns: repeat(4, 1fr); /* Fix 3 images per row */
+    }
+}
+
+/* 📲 Smaller Mobile (below 500px) */
+@media (max-width: 500px) {
+    .images22 {
+        grid-template-columns: repeat(3, 1fr); /* 2 images per row for very small screens */
+    }
+}
+
+/* 🖥️ Larger Screens (Desktop) */
+@media (min-width: 1025px) {
+    .images22 {
+        grid-template-columns: repeat(auto-fit ,minmax(150px ,1fr)); /* Adjust size automatically */
+    }
 }
 
 .main {
@@ -220,7 +291,10 @@ h3 {
     overflow-x: hidden;
 
 }
-
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -10px -10px; }
+}
 .material {
     z-index: 10
 }
@@ -252,7 +326,7 @@ h3 {
 
 @media screen and (max-width: 1450px) {
     .first {
-        flex-wrap:wrap
+        flex-wrap: wrap
     }
 }
 
@@ -262,7 +336,7 @@ h3 {
     border: none;
     border-radius: 10px;
     contain: "";
-    background: linear-gradient(45deg,#0ef,#44d6ae,#388217,#cc3232,#15da67);
+    background: linear-gradient(45deg, #0ef, #44d6ae, #388217, #cc3232, #15da67);
     background-size: 800%;
     height: 6vh;
     filter: blur(15px);
@@ -271,7 +345,9 @@ h3 {
 }
 
 @keyframes glowing {
-    0%,100% {
+
+    0%,
+    100% {
         background-position: 0 0
     }
 
@@ -285,7 +361,7 @@ h3 {
     background-color: #000;
     height: 51px;
     border-radius: 10px;
-/*     height: 7.2vh; */
+    /*     height: 7.2vh; */
     width: 234px;
     /* margin: auto; */
     margin-left: -6px;
@@ -301,18 +377,20 @@ h3 {
     width: auto;
     border: 4px solid transparent;
     border-radius: 20px;
-    background-image: linear-gradient (#911b1b,#f04a4a),linear-gradient(to right,#0ff,#0f0);
+    background-image: linear-gradient (#911b1b, #f04a4a), linear-gradient(to right, #0ff, #0f0);
     background-origin: border-box;
-    background-clip: padding-box,border-box
+    background-clip: padding-box, border-box
 }
 
 @keyframes glow-border {
-    0%,100% {
-        border-image: linear-gradient(to right,#00eeff,#44d6ae,#388217,#cc3232,#15da67) 2
+
+    0%,
+    100% {
+        border-image: linear-gradient(to right, #00eeff, #44d6ae, #388217, #cc3232, #15da67) 2
     }
 
     50% {
-        border-image: linear-gradient(to right,#ff2200,#d644d1,#178266,#ccb032,#9cda15) 2
+        border-image: linear-gradient(to right, #ff2200, #d644d1, #178266, #ccb032, #9cda15) 2
     }
 }
 
@@ -351,23 +429,31 @@ h3 {
     color: #fff;
     outline: 0;
     backdrop-filter: blur(10px);
-    font-family: Minecraft,sans-serif;
+    font-family: Minecraft, sans-serif;
     text-transform: uppercase;
-    transition: .4s ease-in-out
+    transition: .4s ease-in-out;
+    padding: 12px 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
 }
 
 #imageSearch::placeholder {
-    color: #19dad3
+    color: #19dad3;
+    opacity: 0.7;
+    text-shadow: 0px 0px 5px cyan;
 }
 
 #imageSearch:focus {
     width: 300px;
     box-shadow: 0 0 25px #0f0;
-    border-color: #0f0
+    border-color: #0f0;
 }
 
 #imageSearch:focus::placeholder {
-    color: #0f0!important
+    color: #0f0 !important;
+    opacity: 1;
+
 }
 
 .dark-mode {
@@ -375,7 +461,8 @@ h3 {
 }
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 #PVPGaming:hover {
@@ -384,8 +471,8 @@ html {
 
 #darkModeToggle {
     position: relative;
-    background: rgba(0,0,0,0);
-    border: rgba(255,255,255,0);
+    background: rgba(0, 0, 0, 0);
+    border: rgba(255, 255, 255, 0);
     padding: 0;
     z-index: 10
 }
@@ -398,10 +485,305 @@ html {
     opacity: 0;
     transition: opacity .8s ease-in-out
 }
+
 .hello {
     box-shadow: 0 0 5px rgb(0 251 255 / 43%), 0 0 10px rgb(0 255 205 / 60%);
     border-radius: 100px;
     border-bottom: outset;
     margin-bottom: 10px;
+}
+
+.glow-button {
+    display: inline-block;
+    padding: 7px 9px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #0f0;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #0f0, #00f, #f0f, #0f0);
+    background-size: 400%;
+    animation: glowing 8s linear infinite;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-family: system-ui;
+    text-shadow: 5px 5px 5px rgb(0 0 0);
+    font-weight: bold;
+}
+
+.glow-button:hover {
+    background-position: 100%;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.9);
+}
+
+.glow-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.glow-button:hover::before {
+    opacity: 1;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.gallery-button-container {
+    position: absolute;
+    top: 60px;
+    /* Dark mode button ke neeche spacing */
+    left: 7px;
+    /* Agar left me chaiye to */
+    width: 100px;
+    /* Full width, center karne ke liye */
+    display: flex;
+    /* justify-content: center;  */
+    z-index: 10;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    /* Thoda gap between images */
+    overflow: hidden;
+    flex-wrap: nowrap;
+    /* Important - wrap nahi hone dena */
+    max-width: 100%;
+    /* box-shadow: 2px 2px 2px 2px black; */
+}
+
+@media (max-width: 400px) {
+    .image-wrapper {
+        max-width: 90px;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+.galleryHeader {
+    font-family: "Orbitron";
+    /* font-size: 56px; */
+    color: #00ff00;
+    /* text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00; */
+    text-align: center;
+    padding: 10px 30px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(0, 255, 0, 0.6);
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    animation: pulseGlow 2s infinite alternate;
+    display: flex;
+    justify-self: center;
+    /* align-items: center; */
+    justify-content: center;
+    width: 170px;
+    top: 5px;
+    position: relative;
+    font-size: 50px; /* Increase Size */
+    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0; /* Extra Glow */
+}
+
+@keyframes pulseGlow {
+    from {
+        transform: scale(1);
+        text-shadow: 0 0 15px #00ff00;
+    }
+
+    to {
+        transform: scale(1.05);
+        text-shadow: 0 0 30px #00ff00;
+    }
+}
+
+.glow-bar {
+    width: 60%;
+    height: 5px;
+    background: linear-gradient(90deg, #ff0000, #ff7300, #48ff00, #00fff7);
+    margin: 24px auto;
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
+    animation: glow-bar-animation 5s infinite alternate;
+}
+
+@keyframes glow-bar-animation {
+    from { transform: scaleX(1); }
+    to { transform: scaleX(1.2); }
+}
+
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive columns */
+    /* gap: 10px; */
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+    /* gap: 15px; */
+}
+
+.gallery-image img {
+    width: 100%; /* Full width of the grid cell */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    object-fit: cover; /* Ensure full image is visible */
+    aspect-ratio: 1 / 1; /* Ensure square images */    
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10; /* Ye main trick hai - particles ko bilkul neeche bhej diya */
+    pointer-events: none; /* Isse particles pe click nahi hoga */
+    opacity: 0.8;
+    filter: blur(2px);
+}
+.images{
+    position: relative;  /* Ensure it respects z-index */
+    z-index: 10;         /* Gallery particles se upar dikhega */
+    
+}
+
+/* .galleryHeader {
+    font-family: 'Minecraft', sans-serif;
+    font-size: 56px;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;
+    text-align: center;
+    padding: 10px 30px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(0, 255, 0, 0.6);
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    animation: pulseGlow 2s infinite alternate;
+    display: inline-block; /* Box jitna text hai utna space lega */
+    /* margin: 20px auto; Center align */
+
+/* } */ 
+
+@keyframes pulseGlow {
+    from { transform: scale(1); text-shadow: 0 0 15px #00ff00; }
+    to { transform: scale(1.05); text-shadow: 0 0 30px #00ff00; }
+}
+/* 🔥 Lightbox Styling */
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+/* 🖼️ Lightbox Content (Image + Buttons) */
+.lightbox-content {
+    position: relative; /* ✅ Image aur buttons ek doosre se relative honge */
+    display: flex;
+    align-items: center;
+    /* gap: 20px; */ /* Image aur buttons ke beech gap */
+}
+
+/* 🖼️ Lightbox Image */
+#lightbox img {
+    max-width: 80%;
+    max-height: 80vh;
+    border-radius: 8px;
+}
+
+/* ✅ Buttons Ko IMAGE ke top-right me chipka do */
+.popup-buttons {
+    position: absolute;
+    top: 0;
+    /* right: 0; */
+    display: flex;
+    flex-direction: column; /* ✅ Buttons ek ke neeche ek aayenge */
+    /* gap: 10px; */
+    background: rgb(0 0 0 / 0%); /* ✅ Transparent black background */
+    padding: 9px;
+    border-radius: 8px;
+    padding-bottom: 0px;
+}
+
+/* 🔘 Buttons Styling */
+.popup-buttons button {
+    background: #00ffcc00;
+    color: black;
+    /* padding: 8px 12px; */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.popup-buttons button:hover {
+    background: #00bfa600;
+    transform: scale(1.1);
+}
+
+/* ✅ Open Lightbox */
+#lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ❌ Close Button */
+#lightbox .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* 📱 Responsive Fix - Mobile Pe Buttons Neeche Center */
+@media (max-width: 400px) {
+    .lightbox-content {
+        flex-direction: column; /* Mobile pe image aur buttons ek ke neeche ek aayenge */
+        align-items: center;
+        /* gap: 10px; */
+    }
+
+    .popup-buttons {
+        position: static; /* ✅ Mobile me normal position pe aayenge */
+        flex-direction: row; /* Buttons neeche ek line me aayenge */
+        justify-content: center;
+        background: transparent;
+    }
 }
 
