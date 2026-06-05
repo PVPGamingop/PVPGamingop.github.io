@@ -4,340 +4,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PVP Gaming - Gallery</title>
+    <meta name="description" content="PVP Gaming Gallery - Collection of amazing gaming moments">
+    <meta name="theme-color" content="#00ff88">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="">
+
+    <title>Gallery </title>
+
+    <!-- <script src="important.js" defer></script> -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Baloo+Bhaina+2:wght@700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-<!-- ✅ Single Lightbox -->
-<div id="lightbox">
-    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <!-- <div class="floating-blobs"></div> -->
 
-    <div class="lightbox-content">
-        <!-- ✅ Buttons ko image ke side aur top align karne ke liye wrapper -->
-        <div class="popup-buttons">
-            <button id="downloadBtn" onclick="downloadImage()"><img height="60px" width="84px" src="download.png" alt=""></button>
-            <button id="shareBtn" onclick="shareImage()"><img height="60px" width="84px" src="share.png" alt=""></button>
+    <!-- <div class="stars"></div>
+    <div class="aurora-bg"></div> -->
+
+    <header class="main-header">
+        <div class="logo-section">
+            <a href="index.html" class="logo-link">
+                <div class="Logo">
+                    <img class="hello" height="100" width="100" src="Untitled design (4).png" alt="PVP Gaming Logo">
+
+                </div>
+            </a>
+            <a href="index.html" class="logo-link">
+                <h1 id="PVPGaming">PVP Gaming</h1>
+            </a>
         </div>
 
-        <img id="lightbox-img" src="" alt="Image">
-    </div>
-</div>
+        <button id="menu-toggle" class="hamburger"><span></span></button>
 
-
-
-   
-
-    <div id="particles-js"></div>
-    <div class="boundary">
-        <div class="material">
-            <h1 class="galleryHeader" id="typewriter-text"></h1>
-            <div class="glow-bar"></div>
+        <div class="nav-menu" id="navMenu">
+            <a class="gallery-button-container">
+                <a href="index.html" class="glow-button">Home</a>
+            </a>
+            <a href="https://www.youtube.com/@PVP.Gaming" target="_blank">
+                <img src="yt (2).webp" alt="YouTube"> <span>YouTube</span>
+            </a>
+            <a href="https://discord.gg/SKMtzmrRkJ" target="_blank">
+                <img class="discord" src="dis-removebg-preview.webp" alt="Discord"> <span>Discord</span>
+            </a>
+            <a href="https://www.instagram.com/pvp_gaming001/" target="_blank">
+                <img src="insta (3).svg" alt="Instagram"> <span>Instagram </span>
+            </a>
         </div>
-        
-        <div class="search-container">
-            <input type="text" class="search" id="imageSearch" placeholder="Search images...">
-        </div>
-        <div class="gallery-container">
+    </header>
+
+
+
+
+    <!-- <div class="loading-animation"></div> -->
+    <!-- ✅ Single Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <!-- <span class="close-lightbox" onclick="closePopup()">&times;</span> -->
+        <button id="close-lightbox">❌</button>
+        <div class="lightbox-content">
+            <!-- <img id="lightbox-img" src="" alt=""> -->
+
+
+            <!-- ✅ Buttons ko image ke side aur top align karne ke liye wrapper -->
+            <div class="lightbox-overlay-controls">
+            </div>
             
-            <div class="images22">
-                <!-- Add your images here just like you did in index.html -->
-                <div class="hover-image-wrapper">
-                    <img src="PP3.jpeg" alt="PP" onclick="openPopup(this.src)">
-                    <div class="hover-image-overlay">PP</div>
-
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Pranav3.jpeg" alt="Pranav">
-                    <div class="hover-image-overlay">Pranav</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Vijay3.jpeg" alt="Vijay">
-                    <div class="hover-image-overlay">Vijay</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PP4.jpg" alt="PP">
-                    <div class="hover-image-overlay">PP</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Pranav4.jpeg" alt="Pranav">
-                    <div class="hover-image-overlay">Pranav</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Vijay4.jpg" alt="Vijay">
-                    <div class="hover-image-overlay">Vijay</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Pranav5.jpeg" alt="pranav">
-                    <div class="hover-image-overlay">Pranav</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PP5.jpeg" alt="PP">
-                    <div class="hover-image-overlay">PP</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="pranav1.webp" alt="Pranav">
-                    <div class="hover-image-overlay">Pranav</div>
+            <div class="lightbxx">
+                <button id="share-btn" onclick="shareImage()"><img height="60px" width="84px"
+                    src="share-arrow-svgrepo-com (1).svg" alt=""></button>
+                    <button id="download-btn"> <img height="60px" width="84px" src="download-alt-svgrepo-com (1).svg" alt=""
+                        onclick="downloadImage()"></button>
+                        <img id="lightbox-img" src="" alt="Image">
+                        <div id="thumbnail-strip"></div>
+                        
+                    </div>
                 </div>
 
-                <div class="hover-image-wrapper">
-                    <img src="pranav2.jpg" alt="pranav">
-                    <div class="hover-image-overlay">Pranav</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Vijay5.jpeg" alt="Vijay">
-                    <div class="hover-image-overlay">Vijay</div>
+    </div>
+
+
+    <button id="theme-toggle">Change Theme</button>
+
+
+
+
+    <div class="boundary">
+        <div class="background-section" id="background-section">
+            <div class="background">
+
+                <div class="material">
+                    <!-- <button id="darkModeToggle"><img height="50px" width="50px" src="light_mode .webp" alt=""> </button> -->
+                    <div class="galleryHeader" id="typewriter-text" data-text="Gallery" style="--speed: 3s;"></div>
+                    <div class="glow-bar"></div>
                 </div>
 
-                <div class="hover-image-wrapper">
-                    <img src="Pranav6.jpeg" alt="Pranav">
-                    <div class="hover-image-overlay">Pranav</div>
-                </div>
+                <div class="search-container">
+                    <input type="text" class="search" id="imageSearch" placeholder="Search images...">
+                    <span id="search-icon">
+                        <img src="search-svgrepo-com (1).svg" alt="search">
+                        <span id="clear-search"><img src="cancel-svgrepo-com (1).svg" alt=""></span>
 
-                <div class="hover-image-wrapper">
-                    <img src="Pranav7.jpeg" alt="Pranav">
-                    <div class="hover-image-overlay">Pranav</div>
+                    </span>
                 </div>
-
-                <div class="hover-image-wrapper">
-                    <img src="PP6.jpeg" alt="PP">
-                    <div class="hover-image-overlay">PP</div>
-                </div>
-
-                <div class="hover-image-wrapper">
-                    <img src="PP7.jpg" alt="PP">
-                    <div class="hover-image-overlay">PP</div>
-                </div>
-
-                <div class="hover-image-wrapper">
-                    <img src="Vijay6.jpeg" alt="Vijay">
-                    <div class="hover-image-overlay">Vijay</div>
-                </div>
-
-                <div class="hover-image-wrapper">
-                    <img src="Vijay7.jpeg" alt="Vijay">
-                    <div class="hover-image-overlay">Vijay</div>
-                </div>
-
-                <div class="hover-image-wrapper">
-                    <img src="Pranav8.jpeg" alt="Pranav">
-                    <div class="hover-image-overlay">Pranav</div>
-                </div>
-
-                <div class="hover-image-wrapper">
-                    <img src="Pranav9.jpeg" alt="Pranav">
-                    <div class="hover-image-overlay">Pranav</div>
-                </div>
-
-                <div class="hover-image-wrapper">
-                    <img src="PP8.webp" alt="PP">
-                    <div class="hover-image-overlay">PP</div>
-                </div>
-
-                <div class="hover-image-wrapper">
-                    <img src="Vijay8.jpeg" alt="Vijay">
-                    <div class="hover-image-overlay">Vijay</div>
-                </div>
-
-                <div class="hover-image-wrapper">
-                    <img src="PP9.webp" alt="PP">
-                    <div class="hover-image-overlay">PP</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Pranav10.jpeg" alt="Pranav">
-                    <div class="hover-image-overlay">Pranav</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PP10.webp" alt="PP">
-                    <div class="hover-image-overlay">PP</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Parinda.png" alt="Parinda">
-                    <div class="hover-image-overlay">parinda</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="parinda.jpeg" alt="Parinda">
-                    <div class="hover-image-overlay">parinda</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="pvpwarriors.png" alt="pvp warriors">
-                    <div class="hover-image-overlay">PVP Warriors</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PVP warriors (1).jpg" alt="pvp warriors">
-                    <div class="hover-image-overlay">PVP Warriors</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Vijay9.jpeg" alt="Vijay">
-                    <div class="hover-image-overlay">Vijay</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PP11.png" alt="PP">
-                    <div class="hover-image-overlay">PP</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Pranav11.jpeg" alt="Pranav">
-                    <div class="hover-image-overlay">Pranav</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Pranav12.jpeg" alt="Pranav">
-                    <div class="hover-image-overlay">Pranav</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="parinda (2).jpeg" alt="Parinda">
-                    <div class="hover-image-overlay">parinda</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PVP Warriors (2).jpg" alt="pvp warriors ">
-                    <div class="hover-image-overlay">PVP Warriors</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PP12.jpeg" alt="PP">
-                    <div class="hover-image-overlay">PP</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Vijay10.png" alt="Vijay">
-                    <div class="hover-image-overlay">Vijay</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Pranav13.png" alt="Pranav">
-                    <div class="hover-image-overlay">Pranav</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PVP Warriors (3).jpg" alt="PVP Warriors">
-                    <div class="hover-image-overlay">PVP Warriors</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PVP Warriors.webp" alt="PVP Warriors">
-                    <div class="hover-image-overlay">PVP Warriors</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PVP Warriors.png" alt="PVP Warriors">
-                    <div class="hover-image-overlay">PVP Warriors</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PVP Warriors.jpg" alt="PVP Warriors">
-                    <div class="hover-image-overlay">PVP Warriors</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Parinda (3).jpeg" alt="Parinda">
-                    <div class="hover-image-overlay">Parinda</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Parinda (4).jpeg" alt="Parinda">
-                    <div class="hover-image-overlay">Parinda</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Parinda (5).jpeg" alt="Parinda">
-                    <div class="hover-image-overlay">Parinda</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Vijay11.png" alt="Vijay">
-                    <div class="hover-image-overlay">Vijay</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Vijay12.png" alt="Vijay">
-                    <div class="hover-image-overlay">Vijay</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Pranav14.png" alt="Pranav">
-                    <div class="hover-image-overlay">Pranav</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Pranav15.png" alt="Pranav">
-                    <div class="hover-image-overlay">Pranav</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PP 13.jpg" alt="PP">
-                    <div class="hover-image-overlay">PP</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Vijay 13.jpeg" alt="Vijay">
-                    <div class="hover-image-overlay">Vijay</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Vijay 14.jpeg" alt="Vijay">
-                    <div class="hover-image-overlay">Vijay</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PP 14.webp" alt="PP">
-                    <div class="hover-image-overlay">PP</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PP 15.jpg" alt="PP">
-                    <div class="hover-image-overlay">PP</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PP 16.webp" alt="PP">
-                    <div class="hover-image-overlay">PP</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Pranav 16 .webp" alt="Pranav">
-                    <div class="hover-image-overlay">Pranav</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Pranav 17.webp" alt="Pranav">
-                    <div class="hover-image-overlay">Pranav</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Vijay 15 .webp" alt="Vijay">
-                    <div class="hover-image-overlay">Vijay</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Pranav 18.webp" alt="Pranav">
-                    <div class="hover-image-overlay">Pranav</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="pranav 19.webp" alt="Pranav">
-                    <div class="hover-image-overlay">Pranav</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Vijay 16.webp" alt="Vijay">
-                    <div class="hover-image-overlay">Vijay</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="Vijay 17.webp" alt="Vijay">
-                    <div class="hover-image-overlay">Vijay</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PP 17.webp" alt="PP">
-                    <div class="hover-image-overlay">PP</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PP 18.webp" alt="PP">
-                    <div class="hover-image-overlay">PP</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PVP Warriors 8.webp" alt="PVP Warriors">
-                    <div class="hover-image-overlay">PVP Warriors</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PVP Warriors 9.webp" alt="PVP Warriors">
-                    <div class="hover-image-overlay">PVP Warriors</div>
-                </div>
-                <div class="hover-image-wrapper">
-                    <img src="PVP Warriors 10.webp" alt="PVP Warriors">
-                    <div class="hover-image-overlay">PVP Warriors</div>
+                <div class="scroll-indicator" onclick="smoothScrollBy(150)">
+                    <div class="chevron chevron1"></div>
+                    <div class="chevron chevron2"></div>
+                    <div class="chevron chevron3"></div>
                 </div>
 
             </div>
         </div>
+
+        <div class="gallery-container gallery-content">
+
+            <div class="images22 image-grid" data-aos="fade-zoom-in">
+                <!-- Add your images here just like you did in index.html -->
+
+            </div>
+        </div>
     </div>
-</div>
-<div class="gallery-button-container">
-   <a href="index.html" class="glow-button">Home</a>
-</div>
+    </div>
+
     <script>
         AOS.init();
     </script>
     <!-- Image Popup -->
 
-<script src="script.js"></script>
+    <script src="important.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggle = document.getElementById("theme-toggle");
+            const particles = document.getElementById("particles-js");
+            const backgroundImage = document.querySelector(".background img");
+            const body = document.body;
+
+            let whiteTheme = false;
+
+            toggle.addEventListener("click", () => {
+                whiteTheme = !whiteTheme;
+
+                if (whiteTheme) {
+                    body.classList.add("white-theme");
+                    particles.style.display = "none";
+
+                    // Light theme image
+                    if (backgroundImage) {
+                        backgroundImage.src = "download (1).png"; // <- change to your image
+                    }
+
+                } else {
+                    body.classList.remove("white-theme");
+                    particles.style.display = "block";
+
+                    // Dark theme image
+                    if (backgroundImage) {
+                        backgroundImage.src = "download (1).png"; // <- change to your image
+                    }
+                }
+            });
+        });
+
+    </script>
 
 </body>
 
